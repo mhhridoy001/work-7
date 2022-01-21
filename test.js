@@ -27,4 +27,18 @@ document.getElementById("expression").innerHTML = 5 * 6;
 
 document.getElementById("string").innerHTML = "Mehedi" + " "+ "Hridoy";
 
+var m, n;
+m = 5 + 6;
+n = m * 6;
+document.getElementById("variable").innerHTML = n;
 // JavaScript Syntax end
+
+//Comment
+console.log ("hello"); //single line comment
+document.getElementById("singleLine").innerHTML = "Single-line Comments";
+/*
+this is showing only console;
+this comment is using multi-line;
+*/
+document.getElementById("multiLine").innerHTML = "Multi-line Comments";
+//Comment
