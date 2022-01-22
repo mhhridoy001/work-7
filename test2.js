@@ -1,6 +1,6 @@
 // Operators start
 
-// Arithmetic Operators
+// Arithmetic Operators start
 
 let A, B, C;	// Addition(+) Operator
 A = 5;        
@@ -51,9 +51,62 @@ let bb = aa;
 document.getElementById("decrement ").innerHTML =  
 "The value of zz is " + bb + ".";
 
-let aaa= (77 + 44) * 2;	// decrement (--) Operator
+let aaa= (77 + 44) * 2;	// All Arithmetic (--) Operator
 let bbb = aaa;
 document.getElementById("Arithmetic").innerHTML =  
-"The value of zz is " + bbb + ".";
+"The value of bbb is " + bbb + ".";
+
+let abc= (77 + 44) / 2;	// ALL Arithmetic (--) Operator
+let bcd = abc;
+document.getElementById("Arithmetic2").innerHTML =  
+"The value of abc is " + abc + ".";
+
+// Arithmetic Operators end
+
+// Assignment Operators
+
+let abcd= 77;	// assignment Multiplication (--) Operator
+abcd *= 5;
+document.getElementById("assignment").innerHTML =  
+"The value of abcd is " + abcd + ".";
+
+let xyz= 77;	// assignment divides (--) Operator
+xyz %= 5;
+document.getElementById("assignment2").innerHTML =  
+"The value of xyz is " + xyz + ".";
+
+// Assignment Operators END
 
 // Operators end
+
+//  JavaScript Data Types START
+
+let mehedi = 16 + 4 + "Volvo"; // Number String
+document.getElementById("numString").innerHTML = mehedi;
+
+let mehedi1 =  "Volvo"+ 16 + 4; // String Number
+document.getElementById("NumString").innerHTML = mehedi1;
+
+let fruits1= "mango"; //String
+let fruits2= "banana"
+let fruits3= 'pineapple'
+document.getElementById("string").innerHTML = fruits1 +"<br>"+ fruits2 +"<br>"+ fruits3;
+
+let x1 = 34.00;  //Number
+let x2 = 34;
+let x3 = 3.14;
+document.getElementById("number").innerHTML =
+x1 + "<br>" + x2 + "<br>" + x3;
+
+let a1=6;
+let b1=6;
+let c1=8;
+document.getElementById("boolean").innerHTML =
+(a1==b1) + "<br>" + (b1==c1); //brackets must be
+
+let hasan;
+document.getElementById("typeof").innerHTML =
+hasan + "<br>" + typeof hasan;
+
+// JavaScript Data Types END
+

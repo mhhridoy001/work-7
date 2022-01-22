@@ -1,4 +1,4 @@
-// Constant Start
+// Constant Start (constant always upora likta hoi)
 
 const cars = ["Saab", "Volvo", "BMW"]; //constrant arry
 cars[0] = "Toyota";
@@ -13,7 +13,7 @@ car.color = "red";
 car.model = "700.b";
 
 // Display the property:
-document.getElementById("constant1").innerHTML = "The car model is " + car.model; 
+document.getElementById("constant1").innerHTML = "The car model is " + car.model +"<br>" + "The car color is " + car.color; 
 
 const number=500; //constant block scope
 {
@@ -21,6 +21,10 @@ const number=500; //constant block scope
 	document.getElementById("constant2").innerHTML = "The number is " + number;
 }
 document.getElementById("constant2").innerHTML = "The number is " + number;
+
+const car_Name = ["Saab","Volvo","BMW"];  //output showing value=0
+
+document.getElementById("car_Name").innerHTML = car_Name[0];
 
 // Constant end
 
