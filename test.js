@@ -1,3 +1,29 @@
+// Constant Start
+
+const cars = ["Saab", "Volvo", "BMW"]; //constrant arry
+cars[0] = "Toyota";
+cars.push("Audi");
+document.getElementById("constant").innerHTML = cars;
+
+const car = {color:"blue", model:"600.m"}; //constrant object
+
+// Change a property:
+car.color = "red";
+// Change a property:
+car.model = "700.b";
+
+// Display the property:
+document.getElementById("constant1").innerHTML = "The car model is " + car.model; 
+
+const number=500; //constant block scope
+{
+	const number=800;
+	document.getElementById("constant2").innerHTML = "The number is " + number;
+}
+document.getElementById("constant2").innerHTML = "The number is " + number;
+
+// Constant end
+
 // JavaScript Statements start.
 let x, y, z;  // Statement 1
 x = 5;        // Statement 2
@@ -27,7 +53,8 @@ document.getElementById("expression").innerHTML = 5 * 6;
 document.getElementById("string").innerHTML = "Mehedi" + " "+ "Hridoy";
 // JavaScript Syntax end
 
-//Comment
+//Comment start
+
 //single line comment
 console.log ("hello");
 document.getElementById("singleLine").innerHTML = "Single-line Comments";
@@ -36,7 +63,8 @@ this is showing only console;
 this comment is using multi-line;
 */
 document.getElementById("multiLine").innerHTML = "Multi-line Comments";
-//Comment
+
+//Comment end
 
 //Variable start
 var i = 5;
@@ -60,6 +88,7 @@ document.getElementById("let_variable").innerHTML="The value of ef is: "+ ef ;
 // variable end
 
 // let start
+
 let hridoy= 10; // global scope
 {
 	let hridoy= 20; // block scope
@@ -67,21 +96,13 @@ let hridoy= 10; // global scope
 }
 document.getElementById("let").innerHTML= hridoy;
 
-let carName="VOLVO" // let-hosting
+let carName="VOLVO" // let-hosting-work it
 carName="VOLVO"
 document.getElementById("let2").innerHTML= carName;
 
 carsName="BMW"
-let carsName="BMW" // let-hosting-kaj korbana because value assain undefine kora nah)
+let carsName="BMW" // let-hosting-Not work because value assain undefine kora nah)
 document.getElementById("let2").innerHTML= carsName;
+
 // let end
 
-// Constant Start
-
-const cars=["BMW" , "VOLVO", "AUDI", "SAAB"];
-cars [2]= "TOYOTA";
-cars .push("Hero");
-document.getElementById("Constant").innerHTML= cars;
-
-
-// Constant end
