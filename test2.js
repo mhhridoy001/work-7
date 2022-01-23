@@ -98,15 +98,40 @@ let x3 = 3.14;
 document.getElementById("number").innerHTML =
 x1 + "<br>" + x2 + "<br>" + x3;
 
-let a1=6;
+let a1=6;	//Boolean data type
 let b1=6;
 let c1=8;
 document.getElementById("boolean").innerHTML =
 (a1==b1) + "<br>" + (b1==c1); //brackets must be
 
-let hasan;
+let hasan;	// Typeof data type
 document.getElementById("typeof").innerHTML =
 hasan + "<br>" + typeof hasan;
 
-// JavaScript Data Types END
+// JavaScript Data Types END  Functions
+
+// JavaScript Functions start
+	function myFunction( p1, p2)
+	{
+		return p1 * p2;
+	}
+	document.getElementById("functions").innerHTML= myFunction(10, 10);
+
+	function sleep(name,time){
+		return (name +" is sleeping from "+ time);
+	}
+	document.getElementById("functions2").innerHTML= 
+	sleep("karim","8am.") + "<br>" + sleep("rohim","10am.") + "<br>" + sleep("hridoy","11am.");
+
+	function toCelsius(f) {
+  	return (5/9) * (f-32);
+	}
+	document.getElementById("functions3").innerHTML = toCelsius(77);
+
+	function ToCelsius(f) {
+  	
+	}
+	document.getElementById("functions4").innerHTML = ToCelsius();
+// JavaScript Functions end
+
 
