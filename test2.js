@@ -132,6 +132,45 @@ hasan + "<br>" + typeof hasan;
   	
 	}
 	document.getElementById("functions4").innerHTML = ToCelsius();
+
 // JavaScript Functions end
 
+// JavaScript Object start
+	
+let car = "Fiat"; //let use object (car)= variable (Fiat)
+document.getElementById("object").innerHTML = car;
+
+// Create constant an object:
+const cars = {type:"Fiat", model:"500", color:"white"};
+
+// Display some data from the object showing dot(.):
+document.getElementById("object1").innerHTML = "The car type is " + cars.type + "<br>" + "The car color is " + cars.color;
+
+// Create constant an object indivisualy called:
+const person = {
+	firstName: "Mehedi",
+	lastName:"Hasan", 
+	age:"21",
+	father:"Nurullah",
+	mother:"Farmita"
+};
+
+// Display some data from the object showing third bracked[]:
+document.getElementById("object2").innerHTML = "The Father type is " + person["father"] + "<br>" + "The Mother color is " + person["mother"];
+
+const person1 = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    this.identaty();	// its statement- statement end always colon(;)
+    return(this.firstName + " " + this.lastName); 
+ 	},
+  identaty : function() {
+    console.log (this.id); 
+ 	}
+};
+document.getElementById("object3").innerHTML= person1.fullName();
+
+// JavaScript Object end
 
