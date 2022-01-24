@@ -170,7 +170,32 @@ const person1 = {
     console.log (this.id); 
  	}
 };
-document.getElementById("object3").innerHTML= person1.fullName();
+document.getElementById("object3").innerHTML= person1.fullName();// object function ()/method called
 
+const person2 = {
+  firstName: "John",
+  lastName : "Doe",
+  id       : 5566,
+  fullName : function() {
+    this.identaty();	// its statement- statement end always colon(;)
+    return(this.firstName + " " + this.lastName); 
+ 	},
+  identaty : function() {
+    console.log (this.id); 
+ 	}
+};
+document.getElementById("object4").innerHTML= person2.fullName; // object a function()/method call na dia ta result print na howa object print howasa.
+
+let NUMBER=100;				// this is declear by type of number data
+console.log(NUMBER);
+console.log(typeof NUMBER);
+
+let number1= new Number(500); // but this is declear by type of object data (v.i==besi dorkar chara ata use kora jaba nah because loaded)
+console.log(number1);
+console.log(typeof number1);
+
+let string= new String("Mehedi Hasan"); // but this is declear by type of object data (v.i==besi dorkar chara ata use kora jaba nah because loaded)
+console.log(string);
+console.log(typeof string);
 // JavaScript Object end
 
