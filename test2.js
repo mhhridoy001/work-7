@@ -206,5 +206,13 @@ function displayDate(){
 	document.getElementById("event1").innerHTML= Date();
 }
 
+function onImg(){
+	this.setAttribute("src","apple.jpg");
+}
+function outImg(){
+	this.setAttribute("src","orange.jpg")
+}
+
+
 // JavaScript Events end
 
