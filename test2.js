@@ -197,5 +197,14 @@ console.log(typeof number1);
 let string= new String("Mehedi Hasan"); // but this is declear by type of object data (v.i==besi dorkar chara ata use kora jaba nah because loaded)
 console.log(string);
 console.log(typeof string);
+
 // JavaScript Object end
+
+// JavaScript Events Start
+
+function displayDate(){
+	document.getElementById("event1").innerHTML= Date();
+}
+
+// JavaScript Events end
 

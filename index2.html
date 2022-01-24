@@ -55,6 +55,21 @@
 	<p id="object3"></p>
 	<p id="object4"></p>
 
+	<h2>JavaScript Events</h2>
+	<button onclick="this.innerHTML=Date()">click now</button> <!--internal function called in this owen element on event in innerhtml changed-->
+
+	<button onclick="document.getElementById('Event').innerHTML=Date()" >The time is?</button> <!--internal function called run event in innerHtml-->
+	<p id="Event"></p>
+
+	<button onclick="displayDate()">CLICK NOW TIME</button> <!-- External function (variable) called run event in javascript code-->
+	<p id="event1"></p>
+
+	<button onchange="document.getElementById('event2').innerHTML='this is me'" >The time is?</button> <!--internal function called run event in innerHtml-->
+	<p id="event2"></p>
+
+	<p id="object2"></p>
+	<p id="object3"></p>
+	<p id="object4"></p>
 
 
 
