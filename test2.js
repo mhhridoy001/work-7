@@ -271,3 +271,21 @@ document.getElementById("replace").innerHTML = str6.replace("world", "earth");
 let str7="Hello world, welcome to the universe."; ////JavaScript Replacing String Content variable declare
 let str8= str7.replace("the","that");
 console.log(str8);
+//JavaScript String Search End
+
+//JavaScript Template Literals
+
+let literal1= //Multiline Strings
+`The quick
+brown fox
+jumps over
+the lazy "dog"`; 
+document.getElementById("back-ticks").innerHTML = literal1; //Back-Tics Syntax break dilo o same string ai thaka no error
+
+let p1= "Bangladesh";
+let p2= 10;
+let p3= 15;
+let p4= `I love ${p1} and it's population is ${p2+p3}`;
+document.getElementById("Interpolation").innerHTML = p4; 
+
+//JavaScript Template Literals end
