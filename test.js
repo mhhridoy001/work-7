@@ -13,7 +13,7 @@ car.color = "red";
 car.model = "700.b";
 
 // Display the property:
-document.getElementById("constant1").innerHTML = "The car model is " + car.model +"<br>" + "The car color is " + car.color; 
+document.getElementById("constant1").innerHTML = "The car model is " + car.model +"<br>"+ "The car color is " + car.color; 
 
 const number=500; //constant block scope
 {

@@ -212,7 +212,40 @@ function onImg(){
 function outImg(){
 	this.setAttribute("src","orange.jpg")
 }
-
-
 // JavaScript Events end
 
+//JavaScript Strings
+
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //string lenght check
+let length = text.length;
+document.getElementById("string1").innerHTML= length;
+
+let text1 = "We are the \"Vikings\" from the north."; //The sequence \" inserts a double quote in a string:
+document.getElementById("string2").innerHTML = text1; 
+
+let text2 = "The character \
+					is called backslash."; //You can also break up a code line within a text string with a single backslash.
+document.getElementById("string3").innerHTML = text2;
+
+document.getElementById("string4").innerHTML = "Hello " +
+"Dolly!"; //The safest way to break a code line in a string is using string addition.
+
+// x is a string
+let h1 = "John";
+
+// y is an object
+let h2 = new String("John");
+
+// h1 & h2 ar type check 
+document.getElementById("string5").innerHTML =
+typeof h1 + "<br>" + typeof h2;
+
+let A1 = "John";        // x is a string
+let A2 = new String("John");  // y is an object
+
+//Strings and objects cannot be safely compared.This is not equal value and type that false.
+document.getElementById("string6").innerHTML = (A1===A2);
+
+//JavaScript String Search 
+let str = "Please locate where 'locate' occurs!"; //JavaScript String indexOf()
+document.getElementById("indexof").innerHTML = str.indexOf("locate");
