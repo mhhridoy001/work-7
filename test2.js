@@ -249,3 +249,6 @@ document.getElementById("string6").innerHTML = (A1===A2);
 //JavaScript String Search 
 let str = "Please locate where 'locate' occurs!"; //JavaScript String indexOf()
 document.getElementById("indexof").innerHTML = str.indexOf("locate");
+
+let str1 = "Please locate where 'locate' occurs!"; //JavaScript String lastIndexOf() AND last 20number ar pora
+document.getElementById("lastindexof").innerHTML = str1.lastIndexOf("locate",18);
