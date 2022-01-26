@@ -248,7 +248,26 @@ document.getElementById("string6").innerHTML = (A1===A2);
 
 //JavaScript String Search 
 let str = "Please locate where 'locate' occurs!"; //JavaScript String indexOf()
-document.getElementById("indexof").innerHTML = str.indexOf("locate");
+document.getElementById("indexof").innerHTML = str.indexOf("locate",15);
 
-let str1 = "Please locate where 'locate' occurs!"; //JavaScript String lastIndexOf() AND last 20number ar pora
+let str1 = "Please locate where 'locate' occurs!"; //JavaScript String search & indexOf() is same but parameter not work in search
+document.getElementById("search").innerHTML = str.search("where",16);
+
+let str2 = "Please locate where 'locate' occurs!"; //JavaScript String lastIndexOf() AND last 20number ar pora
 document.getElementById("lastindexof").innerHTML = str1.lastIndexOf("locate",18);
+
+let str3 = "Hello world, welcome to the universe."; //JavaScript String includes()
+document.getElementById("include").innerHTML = str3.includes("world");
+
+let str4 = "Hello world, welcome to the universe."; //string.includes(searchvalue, start)
+document.getElementById("include1").innerHTML = str4.includes("world",15);
+
+let str5 = "Hello world, welcome to the universe."; //JavaScript String startsWith()
+document.getElementById("startwith").innerHTML = str5.startsWith("world", 6);
+
+let str6 = "Hello world, welcome to the universe."; //JavaScript Replacing String Content
+document.getElementById("replace").innerHTML = str6.replace("world", "earth");
+
+let str7="Hello world, welcome to the universe."; ////JavaScript Replacing String Content variable declare
+let str8= str7.replace("the","that");
+console.log(str8);
